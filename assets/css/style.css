@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+h1, h2, h3, h4, h5, h6, p, span, ul, li, a, .btn-default, textarea {
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #ffffff;
+}
+button {
+    outline: none;
+    border: none;
+}
+li {
+    list-style: none;
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #fdf9f2;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*GLOBAL CSS START*/
+.secTitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: #4e3120;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.secTitle span {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #4e3120;
+}
+
+.globalBtn {
+    padding: 20px 29px;
+    color: #4e3120;
+    background-color: #dfc38b;
+    cursor: pointer;
+}
+.globalBtn:hover {
+    color: #ffffff;
+    background-color: #4e3120;
+}
+.ctaBar {
+    text-align: center;
+}
+
+
+/*GLOBAL CSS END*/
+
+/* Header Css Starts */
+header {
+    position: relative;
+}
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.topBar div {
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topBar .middleCol img {
+    height: 100px;
+}
+.search-cart form {
+    display: flex;
+    border: 1px solid #4e3120;
+    margin-right: 30px;
+}
+.search-cart form input {
+    background: transparent;
+}
+.search-cart button {
+    width: 35px;
+    height: 35px;
+    background: transparent;
+}
+.search-cart .formToggler {
+    color: #4e3120 !important;
+}
+.search-cart form input {
+    border: none;
+    outline: none;
+    padding: 0 10px 0 0;
+}
+.search-cart .cartIcon {
+    color: #4e3120;
+    font-size: 22px;
+    margin-right: 5px;
+}
+.custom-nav ul li a {
+    position: relative;
+    padding: 3px 10px !important;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4e3120;
+}
+.custom-nav ul li a i {
+    font-size: 12px;
+}
+.custom-nav ul li.has-sub a::after {
+    display: none !important;
+}
+.custom-nav ul li.has-sub ul li a {
+    padding: 12px 20px !important;
+    color: #4e3120;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #dfc38bb0;
+    transition: all 0.3s ease-in-out;
+}
+.custom-nav ul li.has-sub ul li a:hover {
+    background-color: #dfc38b !important;
+}
+.formToggler {
+    display: none;
+}
+.floatingForm {
+    display: none !important;
+}
+/* Header Css Ends */
+
+/* Index Section 1 */
+.bannerCarousel {
+    margin: 50px 0;
+}
+.bannerItems img {
+    width: 100%;
+    max-height: 650px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Index Sec 2 */
+.indexSecTwo {
+    margin-bottom: 50px;
+}
+.catgWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.catgWrapper .catgBox {
+    position: relative;
+    width: 23.5%;
+    height: 300px;
+    overflow: hidden;
+}
+.catgWrapper .catgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.catgWrapper .catgBox p {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: #4e3120;
+}
+
+/* Index Sec 3 */
+.indexSecThree {
+    margin-bottom: 50px;
+}
+.indexSecThree .container {
+    padding: 25px 0;
+}
+.latestCollectionWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.prodWrapper {
+    position: relative;
+    width: 23.5%;
+}
+.prodActions .discountLabel {
+    position: absolute;
+    left: 10px;
+    top: 12%;
+    z-index: 1;
+    font-size: 10px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e3120;
+    padding: 4px;
+}
+.prodActions .inStock {
+    position: absolute;
+    left: 10px;
+    top: 5%;
+    z-index: 1;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 2px 5px;
+}
+.prodActions .prodLink:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+.prodActions img {
+    width: 100%;
+    max-height: 320px;
+    height: 100%;
+    object-fit: cover;
+}
+.hoverActions {
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    width: 35px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    white-space: nowrap;
+    transition: all .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.prodActions:hover .hoverActions {
+    opacity: 1;
+    visibility: visible;
+}
+.hoverActions span{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: #4e3120;
+}
+.hoverActions span:hover {
+    color: #8c5f16;
+    cursor: pointer;
+}
+.prodInfo {
+    margin-top: 15px;
+}
+.prodInfo a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4e3120;
+}
+.prodInfo .prodName{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: none;
+    color: #4e3120;
+    margin: 6px 0;
+}
+.prodPricing {
+    font-size: 18px;
+    color: #8c5f16;
+    text-align: center;
+    margin: 10px 0;
+}
+.prodPricing .oldPrice {
+    color: #999;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+
+/* Index Section 4 */
+.indexSecFour {
+    margin-bottom: 50px;
+}
+.specialCatgWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.specialCatgWrapper .leftCol,
+.specialCatgWrapper .rightCol {
+    width: 49%;
+}
+.specialCatgWrapper .rightCol .relatedCatgProd{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.relatedCatgProd .prodWrapper {
+    width: 48%;
+    margin-bottom: 20px;
+}
+.relatedCatgProd .prodWrapper img {
+    max-height: 140px;
+    object-fit: cover;
+}
+.relatedCatgProd .prodWrapper .prodInfo a {
+    font-size: 14px;
+    font-weight: 600;
+}
+.relatedCatgProd .prodWrapper .prodPricing {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.specialCatgSlider img {
+    max-height: 380px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Index Section 5 */
+.indexSectionFive {
+    margin-bottom: 50px;
+}
+.companyDetail {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #4e3120;
+    margin: 30px 0;
+}
+
+/* Index Section 6 */
+.indexSectionSix {
+    margin-bottom: 50px;
+}
+.indexSectionSix .container {
+    padding: 25px 0;
+}
+.bestSellerSlider {
+    position: relative;
+}
+.bestSellerSlider .owl-nav {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bestSellerSlider .owl-nav button {
+    font-size: 40px !important;
+}
+.bestSellerSlider .owl-nav button:hover{
+    background-color: #dfc38b !important;
+}
+.bestSellerWrapper .prodWrapper {
+    width: unset;
+}
+.bestSellerWrapper .prodWrapper .prodActions img {
+    max-height: 400px;
+    min-height: 400px;
+}
+
+/* Index Sec 7 */
+.indexSecSeven {
+    margin-bottom: 50px;
+}
+.outletProdWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Footer Css Starts */
+footer {
+    background-color: #4e3120;
+    padding: 50px 0;
+}
+footer .colWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+footer .colWrapper .firstCol {
+    width: 45%;
+}
+footer .colWrapper .secCol {
+    width: 27%;
+}
+footer .colWrapper .thirdCol {
+    width: 27%;
+}
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0;
+}
+.socialLinks a {
+    font-size: 30px;
+    font-weight: 500;
+    color: #dfc38b;
+}
+.colTitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: #dfc38b;
+    margin-bottom: 30px;
+}
+.footerCol li {
+    margin-bottom: 10px;
+}
+.footerCol i {
+    color: #dfc38b;
+    font-size: 14px;
+    margin-right: 15px;
+}
+.footerCol a {
+    font-size: 14px;
+    color: #ffffff;
+}
+.divider {
+    width: 100%;
+    display: block;
+    height: 1px;
+    background-color: #dfc38b;
+}
+.copyRight {
+    padding-top: 50px;
+    text-align: center;
+}
+.copyRight p {
+    font-size: 14px;
+    color: #ffffff;
+}.copyRight p a {
+    color: #dfc38b;
+}
+/* Footer Css Starts */
